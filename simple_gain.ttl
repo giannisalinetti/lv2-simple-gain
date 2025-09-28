@@ -1,0 +1,37 @@
+@prefix doap:  <http://usefulinc.com/ns/doap#> .
+@prefix lv2:   <http://lv2plug.in/ns/lv2core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<http://github.com/giannisalinetti/lv2-simple-gain>
+    a lv2:Plugin ;
+    doap:name "Simple Gain" ;
+    doap:description "A simple gain/volume control plugin for learning LV2" ;
+    doap:license <http://opensource.org/licenses/isc> ;
+    doap:maintainer [
+        foaf:name "Gianni Salinetti" ;
+        foaf:mbox <mailto:gbsalinetti@gmail.com> ;
+    ] ;
+    lv2:port [
+        a lv2:InputPort ,
+          lv2:AudioPort ;
+        lv2:index 0 ;
+        lv2:symbol "input" ;
+        lv2:name "Input"
+    ] , [
+        a lv2:OutputPort ,
+          lv2:AudioPort ;
+        lv2:index 1 ;
+        lv2:symbol "output" ;
+        lv2:name "Output"
+    ] , [
+        a lv2:InputPort ,
+          lv2:ControlPort ;
+        lv2:index 2 ;
+        lv2:symbol "gain" ;
+        lv2:name "Gain" ;
+        lv2:default 1.0 ;
+        lv2:minimum 0.0 ;
+        lv2:maximum 2.0 ;
+        rdfs:comment "Gain control (0.0 = silence, 1.0 = unity gain, 2.0 = double volume)"
+    ] .
