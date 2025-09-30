@@ -125,13 +125,6 @@ for (uint32_t pos = 0; pos < n_samples; pos++) {
 - [DSP Guide](http://www.dspguide.com/) - Digital Signal Processing fundamentals
 - [JUCE Framework Documentation](https://docs.juce.com/) - Cross-platform audio development
 
-### Advanced LV2 Topics
-- [LV2 Atom](http://lv2plug.in/ns/ext/atom/) - Event handling and MIDI
-- [LV2 State](http://lv2plug.in/ns/ext/state/) - Plugin state saving/loading
-- [LV2 Presets](http://lv2plug.in/ns/ext/presets/) - Plugin presets
-- [LV2 UI](http://lv2plug.in/ns/extensions/ui/) - Custom plugin interfaces
-- [LV2 Worker](http://lv2plug.in/ns/ext/worker/) - Non-real-time operations
-
 ### Community and Support
 - [LV2 Mailing List](http://lists.lv2plug.in/listinfo.cgi/devel-lv2plug.in) - Developer discussions
 - [LAU (Linux Audio Users)](https://lists.linuxaudio.org/listinfo/linux-audio-user) - Linux audio community
